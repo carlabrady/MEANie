@@ -1,5 +1,8 @@
 myApp.controller('WhereMyPeeps', function ( PeepsService) { //deleted $http
     var vm = this;
+
+    vm.peepsObj = PeepsService.peepObj;
+    
     vm.newPeep = function () {
         console.log('in newPeep');
         var peepToAdd = {
